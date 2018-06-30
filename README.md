@@ -1,2 +1,2 @@
 # Counter
-Counter made experimentally
+Counters made experimentally
