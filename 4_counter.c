@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int NumOfChars(char *s[], int n);
-int NumOfWords(char *s[], int n);
-int NumOfLines(char *s[], int n);
-int NumOfMatch(char *s[], int n, char m);
+int NumberOfChars(char *s[], int n);
+int NumberOfWords(char *s[], int n);
+int NumberOfLines(char *s[], int n);
+int NumberOfMatch(char *s[], int n, char m);
 
 int main(void) {
     int i;
@@ -31,20 +31,20 @@ int main(void) {
     printf("\n");
 
     /* Count the number of characters of lyrics and output. */
-    printf("Number of characters: %d\n", NumOfChars(lines, num_lines) );
+    printf("Number of characters: %d\n", NumberOfChars(lines, num_lines) );
 
     /* Count the number of words of lyrics and output. */
-    printf("Number of words: %d\n", NumOfWords(lines, num_lines) );
+    printf("Number of words: %d\n", NumberOfWords(lines, num_lines) );
 
     /* Count the number of lines of lyrics and output. */
-    printf("Number of lines: %d\n", NumOfLines(lines, num_lines) );
+    printf("Number of lines: %d\n", NumberOfLines(lines, num_lines) );
 
     /* Read one character from the keyboard,
     count the number of characters in the matching lyrics, and output it. */
     printf("Please type in one letter.\n");
     fflush(0);
     scanf("%c",&match);
-    printf("Number of %c: %d\n",match, NumOfMatch(lines, num_lines, match) );
+    printf("Number of %c: %d\n",match, NumberOfMatch(lines, num_lines, match) );
 
     return 0;
 }
@@ -58,7 +58,7 @@ Number of elements of n: s []
 
 (out)                     num: Number of characters (excluding white space)
  ---------------------------------------------------------------------------- */
-int NumOfChars(char *s[], int n) {
+int NumberOfChars(char *s[], int n) {
     int i, j, num = 0;
 
     /* Check line by line (i corresponds to line number). */
@@ -80,7 +80,7 @@ int NumOfChars(char *s[], int n) {
 /* ----------------------------------------------------------------------------
    Function to count word count
  ---------------------------------------------------------------------------- */
-int NumOfWords(char *s[], int n) {
+int NumberOfWords(char *s[], int n) {
     int i, j, num = 0, voi = 0;
 
     /* Check line by line (i corresponds to line number). */
@@ -117,7 +117,7 @@ int NumOfWords(char *s[], int n) {
 /* ----------------------------------------------------------------------------
    Function to count the number of rows (excluding blank lines)
  ---------------------------------------------------------------------------- */
-int NumOfLines(char *s[], int n) {
+int NumberOfLines(char *s[], int n) {
     int i, j, num, voi = 0;
 
     /* Check line by line (i corresponds to line number).*/
@@ -144,7 +144,7 @@ int NumOfLines(char *s[], int n) {
 /* ----------------------------------------------------------------------------
    Function to count the number of characters matching the character m
  ---------------------------------------------------------------------------- */
-int NumOfMatch(char *s[], int n, char m) {
+int NumberOfMatch(char *s[], int n, char m) {
     int i, j, num = 0;
 
     /* Check line by line (i corresponds to line number). */
