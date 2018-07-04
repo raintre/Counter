@@ -1,4 +1,3 @@
-﻿
 #include <stdio.h>
 
 int NumOfChars(char *s[], int n);
@@ -14,24 +13,9 @@ int main(void) {
     /* Initialize an array of pointers * lines []
     with "start address" of character string of each line of the lyrics. */
     char *lines[] = {
-        "Imagine there's no heaven",
-        "It's easy if you try",
-        "No hell below us",
-        "Above us only sky",
-        "Imagine all the people",
-        "Living for today",
-        "",
-        "Imagine there's no countries",
-        "It isn't hard to do",
-        "Nothing to kill or die for",
-        "And no religion too",
-        "Imagine all the people",
-        "Living life in peace",
-        "",
-        "You may say I'm a dreamer",
-        "But I'm not the only one",
-        "I hope someday you'll join us",
-        "And the world will be as one"
+        "example1",
+        "example2",
+        "..."
     };
 
     /* Count lines of lyrics (including blank lines) and output. */
@@ -148,6 +132,7 @@ int NumOfLines(char *s[], int n) {
             j++;
         }
     }
+    
     /*Subtract the total number of blank lines
      from the total number of lines including blank lines.*/
     num = n - voi;
@@ -181,40 +166,3 @@ int NumOfMatch(char *s[], int n, char m) {
     /* Returns the number of characters as an integer return value. */
     return num;
 }
-
-/*
-Number of lines: 18
-
---------------------------------
-Imagine there's no heaven
-It's easy if you try
-No hell below us
-Above us only sky
-Imagine all the people
-Living for today
-
-Imagine there's no countries
-It isn't hard to do
-Nothing to kill or die for
-And no religion too
-Imagine all the people
-Living life in peace
-
-You may say I'm a dreamer
-But I'm not the only one
-I hope someday you'll join us
-And the world will be as one
---------------------------------
-
-Number of characters: 296
-Number of words: 76
-Number of lines: 16
-Please type in one letter.
-a
-Number of a: 17
-<
-*/
-
-
-
-
